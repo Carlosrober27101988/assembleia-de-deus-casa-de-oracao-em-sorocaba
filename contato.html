@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | Casa de Oração</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Casa de Oração</h1>
+    <nav class="nav-primary" aria-label="Índice de navegação">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cultos.html">Cultos</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a href="endereco.html">Endereço</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="contact-card">
+      <h2>Fale com a gente</h2>
+      <p>Estamos aqui para ajudar. Entre em contato pelos canais abaixo.</p>
+
+      <div class="contact-buttons">
+        <button id="btnWhatsapp">WhatsApp</button>
+        <button id="btnEmail">E-mail</button>
+      </div>
+
+      <div class="contact-form">
+        <h3>Envie uma mensagem</h3>
+        <label for="name">Nome</label>
+        <input id="name" type="text" placeholder="Seu nome" />
+
+        <label for="email">E-mail</label>
+        <input id="email" type="email" placeholder="Seu e-mail" />
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" rows="4" placeholder="Escreva sua mensagem"></textarea>
+
+        <button id="btnSend">Enviar Mensagem</button>
+      </div>
+
+      <div id="feedback" aria-live="polite" role="status"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Casa de Oração - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>

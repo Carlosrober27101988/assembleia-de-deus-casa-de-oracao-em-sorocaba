@@ -1,0 +1,563 @@
+/* Estilos globais (semântica melhorada) */
+:root {
+    --cor-fundo: #e6f5ff;
+    /* Define a cor de fundo principal do site */
+    --cor-primaria: #1a5ea8;
+    /* Define a cor primária para elementos principais */
+    --cor-accento: #4a90e2;
+    /* Define a cor de destaque para acentos */
+    --cor-texto: #222;
+    /* Define a cor padrão do texto */
+    --border-radius: 0.5rem;
+    /* Define o raio de borda padrão para cantos arredondados */
+    --espacamento-padrao: 1rem;
+    /* Espaçamento padrão */
+    --fonte-titulo: 1.6rem;
+    /* Tamanho da fonte do título */
+    --altura-minima-mensagem: 12.5rem;
+    /* Altura mínima da mensagem */
+}
+
+* {
+    box-sizing: border-box;
+    /* Define o modelo de caixa para incluir padding e border no tamanho total */
+    margin: 0;
+    /* Remove todas as margens externas */
+    padding: 0;
+    /* Remove todos os espaçamentos internos */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Define a família de fontes para o texto */
+    color: var(--cor-texto);
+    /* Define a cor do texto usando variável CSS */
+    line-height: 1.5;
+    /* Define a altura da linha para melhor legibilidade */
+    background: #fff;
+    /* Define a cor de fundo da página */
+}
+
+/* Cabeçalho semântico */
+header.site-header {
+    display: flex;
+    /* Define o layout como flexbox para alinhamento */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between;
+    /* Distribui espaço entre os itens */
+    padding: var(--espacamento-padrao);
+    /* Adiciona espaçamento interno de 1 rem */
+    background: var(--cor-fundo);
+    /* Define a cor de fundo usando variável */
+    border-bottom: 0.125rem solid #b3e0ff;
+    /* Adiciona uma borda inferior azul clara */
+}
+
+header.site-header h1 {
+    font-size: var(--fonte-titulo);
+    /* Define o tamanho da fonte do título */
+}
+
+/* Navegação principal */
+.nav-primary {
+    display: flex;
+    /* Define o layout como flexbox */
+}
+
+.nav-primary ul {
+    display: flex;
+    /* Define o layout da lista como flexbox */
+    gap: 1rem;
+    /* Adiciona espaço entre os itens */
+    list-style: none;
+    /* Remove os marcadores da lista */
+}
+
+.nav-primary a {
+    color: var(--cor-primaria);
+    /* Define a cor do texto dos links */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    font-weight: 700;
+    /* Define o peso da fonte como negrito */
+    padding: 0.4rem 0.7rem;
+    /* Adiciona espaçamento interno */
+    border-radius: 4px;
+    /* Arredonda os cantos */
+    background: #d9efff;
+    /* Define a cor de fundo dos links */
+}
+
+.nav-primary a:hover {
+    color: #fff;
+    /* Muda a cor do texto no hover */
+    background: var(--cor-accento);
+    /* Muda a cor de fundo no hover */
+}
+
+/* Conteúdo principal */
+main.site-main {
+    max-width: 75rem;
+    /* 1200px * 0.0625 = 75rem */
+    width: 100%;
+    margin: 2rem auto;
+    /* Centraliza o elemento com margem automática */
+    padding: 0 1rem;
+    /* Adiciona espaçamento lateral */
+}
+
+/* Galeria de imagens */
+.section-gallery {
+    display: grid;
+    /* Define o layout como grid */
+    gap: 1rem;
+    /* Adiciona espaço entre os itens do grid */
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    /* Colunas responsivas maiores */
+}
+
+.section-gallery img {
+    width: 100%;
+    /* Define a largura como 100% do contêiner */
+    height: auto;
+    /* Mantém a proporção da altura */
+    border-radius: var(--border-radius);
+    /* Arredonda os cantos usando variável */
+    display: block;
+    /* Remove o espaço extra abaixo das imagens */
+    max-width: 100%;
+    /* Garante que não exceda o contêiner */
+}
+
+/* Vídeo com mensagem lateral */
+.media-feature {
+    display: grid;
+    /* Define o layout como grid */
+    grid-template-columns: 2fr 1fr;
+    /* Define duas colunas com proporções */
+    gap: 1rem;
+    /* Adiciona espaço entre as colunas */
+    align-items: start;
+    /* Alinha os itens ao topo */
+    margin: 0.5rem 0;
+    /* Adiciona margem vertical */
+}
+
+.media-feature video {
+    width: 100%;
+    /* Define a largura como 100% */
+    height: auto;
+    /* Mantém a proporção da altura */
+    border-radius: var(--border-radius);
+    /* Arredonda os cantos */
+}
+
+.media-feature .message-box {
+    background: #e8f4ff;
+    /* Define a cor de fundo da caixa de mensagem */
+    padding: 1rem;
+    /* Adiciona espaçamento interno */
+    border-radius: var(--border-radius);
+    /* Arredonda os cantos */
+    color: #003366;
+    /* Define a cor do texto */
+    font-size: 1.1rem;
+    /* Define o tamanho da fonte */
+    font-weight: 600;
+    /* Define o peso da fonte */
+    display: flex;
+    /* Define o layout como flexbox */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    min-height: 200px;
+    /* Define a altura mínima */
+}
+
+/* Figura específica */
+.figure-3 {
+    width: 100%;
+    /* Define a largura como 100% */
+}
+
+/* Rodapé semântico */
+footer.site-footer {
+    text-align: center;
+    /* Alinha o texto ao centro */
+    padding: 1rem;
+    /* Adiciona espaçamento interno */
+    background: #f7f7f7;
+    /* Define a cor de fundo */
+    border-top: 1px solid #ddd;
+    /* Adiciona uma borda superior */
+}
+
+/* Incluir maior acessibilidade e responsividade */
+@media (max-width: 768px) {
+    header.site-header {
+        flex-direction: column;
+        /* Empilha o título e navegação em mobile */
+        text-align: center;
+        /* Centraliza o texto */
+        padding: 0.5rem;
+        /* Reduz o padding */
+    }
+
+    header.site-header h1 {
+        font-size: 1.4rem;
+        /* Reduz o tamanho da fonte do título */
+        margin-bottom: 0.5rem;
+        /* Adiciona margem inferior */
+    }
+
+    .nav-primary ul {
+        flex-wrap: wrap;
+        /* Permite quebra de linha se necessário */
+        gap: 0.5rem;
+        /* Reduz o espaço entre itens */
+        justify-content: center;
+        /* Centraliza os itens */
+    }
+
+    .nav-primary a {
+        padding: 0.3rem 0.5rem;
+        /* Reduz o padding dos links */
+        font-size: 0.9rem;
+        /* Reduz o tamanho da fonte */
+    }
+
+    main.site-main {
+        padding: 0 0.5rem;
+        /* Reduz o padding lateral */
+        margin: 1rem auto;
+        /* Reduz a margem */
+    }
+
+    .section-gallery {
+        grid-template-columns: 1fr;
+        /* Uma coluna em mobile */
+        gap: 0.5rem;
+        /* Reduz o gap */
+    }
+
+    .media-feature {
+        grid-template-columns: 1fr;
+        /* Uma coluna */
+        gap: 0.5rem;
+        /* Reduz o gap */
+    }
+
+    .media-feature .message-box {
+        min-height: 150px;
+        /* Reduz a altura mínima */
+        font-size: 1rem;
+        /* Reduz o tamanho da fonte */
+        padding: 0.5rem;
+        /* Reduz o padding */
+    }
+
+    footer.site-footer {
+        padding: 0.5rem;
+        /* Reduz o padding */
+        font-size: 0.9rem;
+        /* Reduz o tamanho da fonte */
+    }
+}
+
+@media (min-width: 769px) {
+
+    /* Tablet e acima: empilha verticalmente */
+    .section-gallery {
+        grid-template-columns: 1fr;
+        /* Uma coluna - empilha imagens */
+        gap: 1rem;
+    }
+
+    .media-feature {
+        grid-template-columns: 1fr 1fr;
+        /* Duas colunas - vídeo e mensagem lado a lado */
+        gap: 1rem;
+        /* Espaço entre vídeo e mensagem */
+        align-items: center;
+        /* Alinha ao centro verticamente */
+    }
+
+    .media-feature video {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        /* Tamanho maior do vídeo */
+    }
+
+    .media-feature .message-box {
+        min-height: 150px;
+        /* Altura mínima */
+        font-size: 1rem;
+        /* Tamanho da fonte */
+        padding: 1rem;
+        /* Espaçamento interno */
+    }
+}
+/* Estilo de Cultos */
+.cultos {
+  background: #f7fbff;
+  border: 1px solid #d2e8ff;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(35, 107, 170, 0.09);
+  margin: 1.5rem auto;
+  max-width: 900px;
+}
+.cultos h2 {
+  color: #125a9c;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.cultos p {
+  color: #3b4f65;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.cultos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+.cultos th,
+.cultos td {
+  border: 1px solid #c9ddf4;
+  padding: 0.8rem 0.75rem;
+  text-align: left;
+  font-size: 0.98rem;
+}
+.cultos th {
+  background: #dbeeff;
+  color: #154a7e;
+  font-weight: 700;
+}
+.cultos tbody tr:nth-child(odd) {
+  background: #f4faff;
+}
+.cultos tbody tr:hover {
+  background: #e1efff;
+}
+.cultos h3 {
+  margin-top: 1.3rem;
+  color: #225f96;
+}
+.cultos ul {
+  list-style: disc inside;
+  margin-left: 0.75rem;
+  color: #2d4b6e;
+}
+.cultos ul li {
+  margin: 0.3rem 0;
+}
+@media (max-width: 768px) {
+  .cultos {
+    padding: 1rem;
+    margin: 1rem 0.4rem;
+  }
+  .cultos table,
+  .cultos thead,
+  .cultos tbody,
+  .cultos th,
+  .cultos td,
+  .cultos tr {
+    display: block;
+  }
+  .cultos thead {
+    float: left;
+  }
+  .cultos tr {
+    margin-bottom: 0.75rem;
+  }
+  .cultos td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .cultos td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-left: 0.75rem;
+    font-weight: 700;
+    text-align: left;
+  }
+}
+
+
+/* Estilo para a p�gina de endere�o */
+.address-card {
+  background: #f2f9ff;
+  border: 1px solid #bbe2ff;
+  box-shadow: 0 7px 22px rgba(20, 90, 150, 0.14);
+  border-radius: 1rem;
+  padding: 1.6rem;
+  margin: 1.5rem auto;
+  max-width: 960px;
+}
+.address-card h2 {
+  color: #114f85;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+.address-card .address-text {
+  font-size: 1.08rem;
+  line-height: 1.5;
+  color: #1d4566;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.address-card .map-embed iframe {
+  width: 100%;
+  min-height: 350px;
+  border-radius: 0.7rem;
+  border: 1px solid #c9def4;
+  box-shadow: 0 6px 18px rgba(31, 93, 150, 0.12);
+}
+.address-card .details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.address-card .details h3 {
+  margin-bottom: 0.4rem;
+  color: #1f537e;
+}
+.address-card .details p,
+.address-card .details li {
+  color: #334b6b;
+}
+.address-card .details ul {
+  padding-left: 1.2rem;
+}
+@media (max-width: 840px) {
+  .address-card .details {
+    grid-template-columns: 1fr;
+  }
+  .address-card .address-text {
+    font-size: 1rem;
+  }
+}
+
+
+/* Estilo para a p�gina de contato */
+.contact-card {
+  margin: 1.25rem auto 2rem;
+  padding: 1.6rem;
+  max-width: 900px;
+  background: linear-gradient(145deg, #ffffff, #e9f4ff);
+  border: 1px solid #c7deed;
+  border-radius: 1.2rem;
+  box-shadow: 0 9px 25px rgba(18, 83, 136, 0.16);
+}
+.contact-card h2 {
+  font-size: 2rem;
+  color: #124e7f;
+  margin-bottom: 0.5rem;
+}
+.contact-card p {
+  color: #3d5f7d;
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+}
+.contact-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.4rem;
+}
+.contact-buttons button {
+  flex: 1;
+  padding: 0.78rem 1rem;
+  border: 0;
+  border-radius: 0.65rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ffffff;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+#btnWhatsapp {
+  background: #25d366;
+}
+#btnEmail {
+  background: #0f7cc9;
+}
+.contact-buttons button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+.contact-form {
+  display: grid;
+  gap: 0.78rem;
+  background: #eef7ff;
+  padding: 1rem;
+  border: 1px solid #d5e9f9;
+  border-radius: 0.9rem;
+}
+.contact-form h3 {
+  margin: 0;
+  color: #1e5180;
+}
+.contact-form label {
+  color: #2f556d;
+  font-weight: 600;
+  margin-top: 0.45rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #b8d5ee;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6ab1eb;
+  box-shadow: 0 0 0 2px rgba(106, 177, 235, 0.2);
+}
+#btnSend {
+  margin-top: 0.5rem;
+  padding: 0.82rem 1rem;
+  border-radius: 0.72rem;
+  border: 0;
+  font-weight: 700;
+  background: #1f72b2;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+#btnSend:hover {
+  background: #155f9f;
+  transform: translateY(-1px);
+}
+#feedback {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+@media (max-width: 780px) {
+  .contact-buttons {
+    flex-direction: column;
+  }
+  .contact-buttons button {
+    width: 100%;
+  }
+  .contact-form {
+    padding: 0.95rem;
+  }
+  .contact-card {
+    margin: 1rem 0.6rem 1.6rem;
+  }
+}
+
