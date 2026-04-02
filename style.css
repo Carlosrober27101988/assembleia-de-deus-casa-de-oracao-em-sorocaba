@@ -1,21 +1,21 @@
-/* Estilos globais (semântica melhorada) */
+/* Estilos globais (semÃ¢ntica melhorada) */
 :root {
     --cor-fundo: #e6f5ff;
     /* Define a cor de fundo principal do site */
     --cor-primaria: #1a5ea8;
-    /* Define a cor primária para elementos principais */
+    /* Define a cor primÃ¡ria para elementos principais */
     --cor-accento: #4a90e2;
     /* Define a cor de destaque para acentos */
     --cor-texto: #222;
-    /* Define a cor padrão do texto */
+    /* Define a cor padrÃ£o do texto */
     --border-radius: 0.5rem;
-    /* Define o raio de borda padrão para cantos arredondados */
+    /* Define o raio de borda padrÃ£o para cantos arredondados */
     --espacamento-padrao: 1rem;
-    /* Espaçamento padrão */
+    /* EspaÃ§amento padrÃ£o */
     --fonte-titulo: 1.6rem;
-    /* Tamanho da fonte do título */
+    /* Tamanho da fonte do tÃ­tulo */
     --altura-minima-mensagem: 12.5rem;
-    /* Altura mínima da mensagem */
+    /* Altura mÃ­nima da mensagem */
 }
 
 * {
@@ -24,42 +24,42 @@
     margin: 0;
     /* Remove todas as margens externas */
     padding: 0;
-    /* Remove todos os espaçamentos internos */
+    /* Remove todos os espaÃ§amentos internos */
 }
 
 body {
     font-family: Arial, sans-serif;
-    /* Define a família de fontes para o texto */
+    /* Define a famÃ­lia de fontes para o texto */
     color: var(--cor-texto);
-    /* Define a cor do texto usando variável CSS */
+    /* Define a cor do texto usando variÃ¡vel CSS */
     line-height: 1.5;
     /* Define a altura da linha para melhor legibilidade */
     background: #fff;
-    /* Define a cor de fundo da página */
+    /* Define a cor de fundo da pÃ¡gina */
 }
 
-/* Cabeçalho semântico */
+/* CabeÃ§alho semÃ¢ntico */
 header.site-header {
     display: flex;
     /* Define o layout como flexbox para alinhamento */
     align-items: center;
     /* Alinha os itens verticalmente ao centro */
     justify-content: space-between;
-    /* Distribui espaço entre os itens */
+    /* Distribui espaÃ§o entre os itens */
     padding: var(--espacamento-padrao);
-    /* Adiciona espaçamento interno de 1 rem */
+    /* Adiciona espaÃ§amento interno de 1 rem */
     background: var(--cor-fundo);
-    /* Define a cor de fundo usando variável */
+    /* Define a cor de fundo usando variÃ¡vel */
     border-bottom: 0.125rem solid #b3e0ff;
     /* Adiciona uma borda inferior azul clara */
 }
 
 header.site-header h1 {
     font-size: var(--fonte-titulo);
-    /* Define o tamanho da fonte do título */
+    /* Define o tamanho da fonte do tÃ­tulo */
 }
 
-/* Navegação principal */
+/* NavegaÃ§Ã£o principal */
 .nav-primary {
     display: flex;
     /* Define o layout como flexbox */
@@ -69,7 +69,7 @@ header.site-header h1 {
     display: flex;
     /* Define o layout da lista como flexbox */
     gap: 1rem;
-    /* Adiciona espaço entre os itens */
+    /* Adiciona espaÃ§o entre os itens */
     list-style: none;
     /* Remove os marcadores da lista */
 }
@@ -82,7 +82,7 @@ header.site-header h1 {
     font-weight: 700;
     /* Define o peso da fonte como negrito */
     padding: 0.4rem 0.7rem;
-    /* Adiciona espaçamento interno */
+    /* Adiciona espaÃ§amento interno */
     border-radius: 4px;
     /* Arredonda os cantos */
     background: #d9efff;
@@ -96,15 +96,15 @@ header.site-header h1 {
     /* Muda a cor de fundo no hover */
 }
 
-/* Conteúdo principal */
+/* ConteÃºdo principal */
 main.site-main {
     max-width: 75rem;
     /* 1200px * 0.0625 = 75rem */
     width: 100%;
     margin: 2rem auto;
-    /* Centraliza o elemento com margem automática */
+    /* Centraliza o elemento com margem automÃ¡tica */
     padding: 0 1rem;
-    /* Adiciona espaçamento lateral */
+    /* Adiciona espaÃ§amento lateral */
 }
 
 /* Galeria de imagens */
@@ -112,32 +112,32 @@ main.site-main {
     display: grid;
     /* Define o layout como grid */
     gap: 1rem;
-    /* Adiciona espaço entre os itens do grid */
+    /* Adiciona espaÃ§o entre os itens do grid */
     grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
     /* Colunas responsivas maiores */
 }
 
 .section-gallery img {
     width: 100%;
-    /* Define a largura como 100% do contêiner */
+    /* Define a largura como 100% do contÃªiner */
     height: auto;
-    /* Mantém a proporção da altura */
+    /* MantÃ©m a proporÃ§Ã£o da altura */
     border-radius: var(--border-radius);
-    /* Arredonda os cantos usando variável */
+    /* Arredonda os cantos usando variÃ¡vel */
     display: block;
-    /* Remove o espaço extra abaixo das imagens */
+    /* Remove o espaÃ§o extra abaixo das imagens */
     max-width: 100%;
-    /* Garante que não exceda o contêiner */
+    /* Garante que nÃ£o exceda o contÃªiner */
 }
 
-/* Vídeo com mensagem lateral */
+/* VÃ­deo com mensagem lateral */
 .media-feature {
     display: grid;
     /* Define o layout como grid */
     grid-template-columns: 2fr 1fr;
-    /* Define duas colunas com proporções */
+    /* Define duas colunas com proporÃ§Ãµes */
     gap: 1rem;
-    /* Adiciona espaço entre as colunas */
+    /* Adiciona espaÃ§o entre as colunas */
     align-items: start;
     /* Alinha os itens ao topo */
     margin: 0.5rem 0;
@@ -148,7 +148,7 @@ main.site-main {
     width: 100%;
     /* Define a largura como 100% */
     height: auto;
-    /* Mantém a proporção da altura */
+    /* MantÃ©m a proporÃ§Ã£o da altura */
     border-radius: var(--border-radius);
     /* Arredonda os cantos */
 }
@@ -157,7 +157,7 @@ main.site-main {
     background: #e8f4ff;
     /* Define a cor de fundo da caixa de mensagem */
     padding: 1rem;
-    /* Adiciona espaçamento interno */
+    /* Adiciona espaÃ§amento interno */
     border-radius: var(--border-radius);
     /* Arredonda os cantos */
     color: #003366;
@@ -175,21 +175,21 @@ main.site-main {
     text-align: center;
     /* Alinha o texto ao centro */
     min-height: 200px;
-    /* Define a altura mínima */
+    /* Define a altura mÃ­nima */
 }
 
-/* Figura específica */
+/* Figura especÃ­fica */
 .figure-3 {
     width: 100%;
     /* Define a largura como 100% */
 }
 
-/* Rodapé semântico */
+/* RodapÃ© semÃ¢ntico */
 footer.site-footer {
     text-align: center;
     /* Alinha o texto ao centro */
     padding: 1rem;
-    /* Adiciona espaçamento interno */
+    /* Adiciona espaÃ§amento interno */
     background: #f7f7f7;
     /* Define a cor de fundo */
     border-top: 1px solid #ddd;
@@ -200,7 +200,7 @@ footer.site-footer {
 @media (max-width: 768px) {
     header.site-header {
         flex-direction: column;
-        /* Empilha o título e navegação em mobile */
+        /* Empilha o tÃ­tulo e navegaÃ§Ã£o em mobile */
         text-align: center;
         /* Centraliza o texto */
         padding: 0.5rem;
@@ -209,16 +209,16 @@ footer.site-footer {
 
     header.site-header h1 {
         font-size: 1.4rem;
-        /* Reduz o tamanho da fonte do título */
+        /* Reduz o tamanho da fonte do tÃ­tulo */
         margin-bottom: 0.5rem;
         /* Adiciona margem inferior */
     }
 
     .nav-primary ul {
         flex-wrap: wrap;
-        /* Permite quebra de linha se necessário */
+        /* Permite quebra de linha se necessÃ¡rio */
         gap: 0.5rem;
-        /* Reduz o espaço entre itens */
+        /* Reduz o espaÃ§o entre itens */
         justify-content: center;
         /* Centraliza os itens */
     }
@@ -253,7 +253,7 @@ footer.site-footer {
 
     .media-feature .message-box {
         min-height: 150px;
-        /* Reduz a altura mínima */
+        /* Reduz a altura mÃ­nima */
         font-size: 1rem;
         /* Reduz o tamanho da fonte */
         padding: 0.5rem;
@@ -279,9 +279,9 @@ footer.site-footer {
 
     .media-feature {
         grid-template-columns: 1fr 1fr;
-        /* Duas colunas - vídeo e mensagem lado a lado */
+        /* Duas colunas - vÃ­deo e mensagem lado a lado */
         gap: 1rem;
-        /* Espaço entre vídeo e mensagem */
+        /* EspaÃ§o entre vÃ­deo e mensagem */
         align-items: center;
         /* Alinha ao centro verticamente */
     }
@@ -290,16 +290,16 @@ footer.site-footer {
         width: 100%;
         height: auto;
         max-height: 500px;
-        /* Tamanho maior do vídeo */
+        /* Tamanho maior do vÃ­deo */
     }
 
     .media-feature .message-box {
         min-height: 150px;
-        /* Altura mínima */
+        /* Altura mÃ­nima */
         font-size: 1rem;
         /* Tamanho da fonte */
         padding: 1rem;
-        /* Espaçamento interno */
+        /* EspaÃ§amento interno */
     }
 }
 /* Estilo de Cultos */
@@ -393,7 +393,7 @@ footer.site-footer {
 }
 
 
-/* Estilo para a p�gina de endere�o */
+/* Estilo para a página de endereço */
 .address-card {
   background: #f2f9ff;
   border: 1px solid #bbe2ff;
@@ -449,7 +449,7 @@ footer.site-footer {
 }
 
 
-/* Estilo para a p�gina de contato */
+/* Estilo para a página de contato */
 .contact-card {
   margin: 1.25rem auto 2rem;
   padding: 1.6rem;
@@ -560,4 +560,63 @@ footer.site-footer {
     margin: 1rem 0.6rem 1.6rem;
   }
 }
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
+.container-videos {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+/* Container do Vídeo Responsivo (16:9) */
+.video-principal {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 30px 0;
+    background-color: #000;
+}
+
+.video-principal iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Botão do YouTube */
+.btn-youtube {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-youtube:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
