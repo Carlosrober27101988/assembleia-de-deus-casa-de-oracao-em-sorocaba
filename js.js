@@ -1,4 +1,4 @@
-﻿const phoneNumber = '5511912345678'; // formatação internacional sem +
+﻿const phoneNumber = '5515981623093'; // formatação internacional sem +
 const emailAddress = 'contato@casadeoracao.com.br';
 
 function openWhatsApp() {
